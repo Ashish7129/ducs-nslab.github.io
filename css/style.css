@@ -1398,7 +1398,7 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 991px) {
   .schedule .schedule-contents .schedule-item ul li .teach {
-    width: 70%;
+    width: 72%;
   }
 }
 .schedule .schedule-contents .schedule-item ul li .venue {
