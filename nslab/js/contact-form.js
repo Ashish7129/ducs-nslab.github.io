@@ -32,12 +32,13 @@ Ajax Contact Form
         // process the form
         $.ajax({
             type : 'POST',
-            url  : 'process.php',
+          /*  url  : 'process.php',
             data : formData,
             dataType : 'json',
-            encode : true
-        }).done(function (data) {
+            encode : true*/
+        }).done(function () {
             // handle errors
+            /*
             if (!data.success) {
                 if (data.errors.name) {
                     $('#name-field').addClass('has-error');
@@ -58,10 +59,10 @@ Ajax Contact Form
                     $('#message-field').addClass('has-error');
                     $('#message-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.message + '</span>');
                 }
-            } else {
+            } else {*/
                 // display success message
-                $form.html('<div class="alert alert-success">' + data.message + '</div>');
-            }
+                $form.html('<div class="alert alert-success"> Thank you for your response</div>');
+        //}
         }).fail(function (data) {
             // for debug
             console.log(data)
