@@ -32,11 +32,11 @@ Ajax Contact Form
         // process the form
         $.ajax({
             type : 'POST',
-          /*  url  : 'process.php',
+          //  url  : 'process.php',
             data : formData,
             dataType : 'json',
-            encode : true*/
-        }).done(function () {
+           // encode : true
+        }).done(function (data) {
             // handle errors
             /*
             if (!data.success) {
@@ -61,7 +61,8 @@ Ajax Contact Form
                 }
             } else {*/
                 // display success message
-                $form.html('<div class="alert alert-success"> Thank you for your response</div>');
+                console.log(data);
+                $form.html('<div class="alert alert-success"> Thank you for your response </div>');
         //}
         }).fail(function (data) {
             // for debug
