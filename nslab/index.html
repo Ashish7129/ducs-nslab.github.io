@@ -393,14 +393,14 @@
                         </address>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                        <form action="" id="contact-form" method="post" class="contact-form">
                             <div class="form-double">
                                 <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
                                 <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
                             </div>
                             <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
                             <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
-                            <button type="submit" class="button">Submit</button>
+                            <button type="submit" class="button contactus-form">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -429,7 +429,11 @@
         </div>
     </footer>
 
-
+    <script>
+        $(".contactus-form").on('click',function(){
+            alert("Thank you for your response");
+        })
+    </script>
 
 
 
