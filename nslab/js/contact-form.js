@@ -36,7 +36,7 @@ Ajax Contact Form
             data : formData,
             dataType : 'json',
            // encode : true
-        }).done(function (data) {
+        }).success(function (data) {
             // handle errors
             /*
             if (!data.success) {
