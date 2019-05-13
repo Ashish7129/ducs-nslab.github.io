@@ -31,7 +31,7 @@ Ajax Contact Form
 
         // process the form
         $.ajax({
-            type : 'POST',
+            type : 'GET',
           //  url  : 'process.php',
             data : formData,
             dataType : 'json',
