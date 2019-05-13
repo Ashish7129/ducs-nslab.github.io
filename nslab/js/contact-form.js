@@ -28,9 +28,9 @@ Ajax Contact Form
             'subject' : $('input[name="form-subject"]').val(),
             'message' : $('textarea[name="form-message"]').val()
         };
-
+        $form.html('<div class="alert alert-success"> Thank you for your response </div>');
         // process the form
-        $.ajax({
+        /*$.ajax({
             type : 'GET',
           //  url  : 'process.php',
             data : formData,
@@ -59,16 +59,16 @@ Ajax Contact Form
                     $('#message-field').addClass('has-error');
                     $('#message-field').find('.col-lg-10').append('<span class="help-block">' + data.errors.message + '</span>');
                 }
-            } else {*/
+            } else {
                 // display success message
                 console.log(data);
-                $form.html('<div class="alert alert-success"> Thank you for your response </div>');
+                
         //}
         }).fail(function (data) {
             // for debug
             console.log(data)
         });
-
+        */
         e.preventDefault();
     });
 }(jQuery, window, document));
